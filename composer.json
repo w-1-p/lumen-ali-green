@@ -1,0 +1,29 @@
+{
+    "name": "wangyipinglove/ali-green",
+    "license": "MIT",
+    "description": "阿里内容检测，包括文本、关键词文本检测以及对图片涉黄、暴恐、敏感检测、广告、二维码等",
+    "authors": [
+        {
+            "name": "Sam wang",
+            "email": "407213504@qq.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.0|~6.0|~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wangyipinglove\\AliGreen\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wangyipinglove\\AliGreen\\AliGreenServiceProvider"
+            ],
+            "aliases": {
+                "AliGreen" : "Wangyipinglove\\AliGreen\\Facades\\AliGreen"
+            }
+        }
+    }
+}
